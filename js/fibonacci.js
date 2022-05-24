@@ -12,7 +12,7 @@ const rFibonacci = (n) => {
     if (n == 0) return 0;
     if (n == 1) return 1;
 
-    if (cahce[n]) return cahce[n];
+    if (cahce[n] !== undefined) return cahce[n];
 
     const result = fib(n - 1) + fib(n - 2);
     cahce[n] = result;

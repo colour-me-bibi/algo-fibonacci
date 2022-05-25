@@ -9,8 +9,8 @@ const rFibonacci = (n) => {
   const cahce = {};
 
   const fib = (n) => {
-    if (n == 1) return 0;
-    if (n == 2) return 1;
+    if (n == 0) return 0;
+    if (n == 1) return 1;
 
     if (cahce[n] !== undefined) return cahce[n];
 
@@ -29,8 +29,8 @@ const rFibonacci = (n) => {
  * @returns The nth fibonacci number
  */
 const naiivRecursiveFibonacci = (n) => {
-  if (n == 1) return 0;
-  if (n == 2) return 1;
+  if (n === 0) return 0;
+  if (n === 1) return 1;
 
   return naiivRecursiveFibonacci(n - 1) + naiivRecursiveFibonacci(n - 2);
 };

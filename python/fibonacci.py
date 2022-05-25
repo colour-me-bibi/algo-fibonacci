@@ -15,9 +15,9 @@ def r_fibonacci(n):
         int: The nth term of the fibonacci sequence.
     """
 
-    if n == 1:
+    if n == 0:
         return 0
-    if n == 2:
+    if n == 1:
         return 1
 
     return r_fibonacci(n - 1) + r_fibonacci(n - 2)

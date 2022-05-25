@@ -56,4 +56,4 @@ def mathyFib(n):
     square_root_5 = 2.23606797749979   # math.sqrt(5)
     phi           = 1.618033988749895  # (1 + math.sqrt(5)) / 2
 
-    return int(math.ceil((phi ** n - (-phi) ** (-n)) / square_root_5))
+    return math.ceil((phi ** n - (-phi) ** (-n)) / square_root_5)

@@ -4,7 +4,7 @@ import math
 from functools import lru_cache
 
 
-@lru_cache
+@lru_cache(maxsize=None)
 def r_fibonacci(n):
     """
     Returns the nth term of the fibonacci sequence recursively using a cache.

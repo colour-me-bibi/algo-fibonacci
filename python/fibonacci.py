@@ -6,7 +6,8 @@ from functools import lru_cache
 
 @lru_cache
 def r_fibonacci(n):
-    """Returns the nth term of the fibonacci sequence recursively using a cache.
+    """
+    Returns the nth term of the fibonacci sequence recursively using a cache.
 
     Args:
         n (int): The nth term of the fibonacci sequence.
@@ -24,7 +25,8 @@ def r_fibonacci(n):
 
 
 def fibonacci(n):
-    """Returns the nth term of the fibonacci sequence.
+    """
+    Returns the nth term of the fibonacci sequence.
 
     Args:
         n (int): The nth term of the fibonacci sequence.

@@ -1,6 +1,5 @@
 
 
-import math
 from functools import lru_cache
 
 
@@ -56,6 +55,6 @@ def mathyFib(n):
     """
 
     square_root_5 = 2.23606797749979   # math.sqrt(5)
-    phi           = 1.618033988749895  # (1 + math.sqrt(5)) / 2
+    phi = 1.618033988749895  # (1 + math.sqrt(5)) / 2
 
     return math.ceil((phi ** n - (-phi) ** (-n)) / square_root_5)

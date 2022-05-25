@@ -43,7 +43,7 @@ def fibonacci(n):
 
 def mathyFib(n):
     """
-    Returns the nth term of the fibonacci sequence using the closed form of the
+    Returns the nth term of the fibonacci sequence using the closed form equation of the
     fibonacci sequence.
 
     Args:

@@ -1,5 +1,6 @@
 
 
+import math
 from functools import lru_cache
 
 
@@ -38,3 +39,19 @@ def fibonacci(n):
         a, b = b, a + b
 
     return a
+
+
+def mathyFib(n):
+    """
+    Returns the nth term of the fibonacci sequence using the closed form of the
+    fibonacci sequence.
+
+    Args:
+        n (int): The nth term of the fibonacci sequence.
+
+    Returns:
+        int: The nth term of the fibonacci sequence.
+    """
+
+    phi = (1 + math.sqrt(5)) / 2
+    return int((phi ** n - (1 - phi) ** n) / math.sqrt(5))

@@ -23,6 +23,19 @@ const rFibonacci = (n) => {
 };
 
 /**
+ * Returns the nth fiboanacci number using recursion without caching.
+ *
+ * @param {Integer} n The nth fibonacci number to return
+ * @returns The nth fibonacci number
+ */
+const naiivRecursiveFibonacci = (n) => {
+  if (n == 1) return 0;
+  if (n == 2) return 1;
+
+  return naiivRecursiveFibonacci(n - 1) + naiivRecursiveFibonacci(n - 2);
+};
+
+/**
  * Returns the nth fibonacci number.
  *
  * @param {Integer} n
@@ -43,4 +56,4 @@ const fibonacci = (n) => {
   return a;
 };
 
-module.exports = { fibonacci }
+module.exports = { fibonacci };

@@ -33,6 +33,8 @@ const fibonacci = (n) => {
   let b = 1;
 
   for (let i = 0; i < n; i++) {
+    // a, b = b, a + b
+
     let temp = a;
     a = b;
     b = temp + b;
@@ -41,4 +43,4 @@ const fibonacci = (n) => {
   return a;
 };
 
-module.exports = { fibonacci };
+module.exports = { fibonacci }
